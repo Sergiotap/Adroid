@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Actividad 1</string>
+    <string name="bAceptar">Aceptar</string>
+    <string name="tIntroduce">¿Cómo te llamas?</string>
+    <string name="tMostrar">Tu nombre es: </string>
+
+
+</resources>

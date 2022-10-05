@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/resetearTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:text="Resetear Todo"
+        app:layout_constraintStart_toEndOf="@+id/contarTodo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contarTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="110dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/contadorUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Sumar 1"
+        app:layout_constraintStart_toEndOf="@+id/contarUno"
+        app:layout_constraintTop_toBottomOf="@+id/resetearTodo" />
+
+    <Button
+        android:id="@+id/resetearUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Resetear"
+        app:layout_constraintStart_toEndOf="@+id/contadorUno"
+        app:layout_constraintTop_toBottomOf="@+id/resetearTodo" />
+
+    <TextView
+        android:id="@+id/contarUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contarTodo" />
+
+    <Button
+        android:id="@+id/contadorDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Sumar 1"
+        app:layout_constraintStart_toEndOf="@+id/contarDos"
+        app:layout_constraintTop_toBottomOf="@+id/contadorUno" />
+
+    <Button
+        android:id="@+id/resetearDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Resetear"
+        app:layout_constraintStart_toEndOf="@+id/contadorDos"
+        app:layout_constraintTop_toBottomOf="@+id/resetearUno" />
+
+    <TextView
+        android:id="@+id/contarDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contarUno" />
+
+    <TextView
+        android:id="@+id/contarTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contarDos" />
+
+    <Button
+        android:id="@+id/contadorTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Sumar 1"
+        app:layout_constraintStart_toEndOf="@+id/contarTres"
+        app:layout_constraintTop_toBottomOf="@+id/contadorDos" />
+
+    <Button
+        android:id="@+id/resetearTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Resetear"
+        app:layout_constraintStart_toEndOf="@+id/contadorTres"
+        app:layout_constraintTop_toBottomOf="@+id/resetearDos" />
+
+    <TextView
+        android:id="@+id/contarCuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contarTres" />
+
+    <Button
+        android:id="@+id/contadorCuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Sumar 1"
+        app:layout_constraintStart_toEndOf="@+id/contarCuatro"
+        app:layout_constraintTop_toBottomOf="@+id/contadorTres" />
+
+    <Button
+        android:id="@+id/resetearCuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:text="Resetear"
+        app:layout_constraintStart_toEndOf="@+id/contadorCuatro"
+        app:layout_constraintTop_toBottomOf="@+id/resetearTres" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

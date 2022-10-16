@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="Bienvenido al juego de piedra papel o tijera"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:textAlignment="center">
+
+            <ImageButton
+                android:id="@+id/bPiedra"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="piedra"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/piedra" />
+
+            <ImageButton
+                android:id="@+id/bPapel"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="papel"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/papel" />
+
+            <ImageButton
+                android:id="@+id/bTijeras"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="tijeras"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/tijeras" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tMaquina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tContJugador"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="80dp"
+                android:hint="Jugador"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tContMaquina"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="80dp"
+                android:hint="Maquina"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

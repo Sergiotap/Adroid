@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Viajes</string>
+    <string-array name="ciudades">
+        <item>Madrid</item>
+        <item>Santander</item>
+        <item>Santiago</item>
+    </string-array>
+</resources>

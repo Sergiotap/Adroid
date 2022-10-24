@@ -6,133 +6,206 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/viajeTaxi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Viaje en taxi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="50dp"
-        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viajeTaxi">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/Ciudad"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Ciudad"
-                android:gravity="center"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/FechaIda"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Fecha de ida"
-                android:gravity="center"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/HoraIda"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Hora de ida"
-                android:gravity="center"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/TipoViaje"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Tipo de viaje"
-                android:gravity="center"
-                android:textAlignment="center" />
-
-            <TextView
-                android:enabled="false"
-                android:id="@+id/FechaVuelta"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Fecha de vuelta"
-                android:gravity="center"
-                android:textAlignment="center" />
-
-            <TextView
-                android:enabled="false"
-                android:id="@+id/HoraVuelta"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Hora de vuelta"
-                android:gravity="center"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/Nombre"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Nombre"
-                android:gravity="center"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/DireccionRecogida"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Dirección de recogida"
-                android:gravity="center"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/DNI"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="DNI"
-                android:gravity="center"
-                android:textAlignment="center" />
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/viajeTaxi"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="54dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Viaje en taxi" />
 
-            <Spinner
-                android:id="@+id/tCiudad"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:gravity="center"
-                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/tFechaIda"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:inputType="date"
-                tools:ignore="SpeakableTextPresentCheck" />
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/editTextTime"
+                <TextView
+                    android:id="@+id/CiudadSalida"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="Ciudad de salida"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/CiudadLlegada"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="Ciudad de llegada"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/FechaIda"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="Fecha de ida"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/HoraIda"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="Hora de ida"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/TipoViaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="Tipo de viaje"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/FechaVuelta"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="Fecha de vuelta"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/HoraVuelta"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="Hora de vuelta"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/Nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="Nombre"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/DireccionRecogida"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="Dirección de recogida"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/DNI"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="DNI"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:inputType="time"
-                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/tCiudadSalida"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                <Spinner
+                    android:id="@+id/tCiudadLlegada"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/tFechaIda"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:inputType="date"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/tHoraIda"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:inputType="time"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <Spinner
+                    android:id="@+id/tipoViaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/tFechaVuelta"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:enabled="false"
+                    android:inputType="date"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/tHoraVuelta"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:enabled="false"
+                    android:inputType="time"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/tNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:inputType="textPersonName"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/tDirec"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:inputType="textPersonName"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/tDNI"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/bConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Confirmar viaje"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 

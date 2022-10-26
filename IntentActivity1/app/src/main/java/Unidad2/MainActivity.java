@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     public void lanzar(){
         Intent intento = new Intent(this,MainActivity2.class);
         String mensaje= tMensaje.getText().toString();
-        intento.putExtra(preMensaje,"Hola "+mensaje+"!!!!!!");
+            intento.putExtra(preMensaje,"Hola "+mensaje+"!!!!!!");
         startActivity(intento);
     }
 }

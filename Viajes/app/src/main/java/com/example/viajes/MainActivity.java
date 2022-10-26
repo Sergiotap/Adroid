@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     EditText tFechaIda, tHoraIda, tFechaVuelta, tHoraVuelta, tNombre, tDirec, tDNI;
     Spinner spinner1,spinner2, spinner3;
     String tSpinner1, tSpinner2, tSpinner3;
-    TextView FechaVuelta, HoraVuelta, CiudadSalida, CiudadLlegada;
+    TextView FechaVuelta, HoraVuelta, CiudadSalida, CiudadLlegada, HoraIda, FechaIda;
     Button bConfirmar;
+    boolean validado=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         CiudadSalida=findViewById(R.id.CiudadSalida);
         CiudadLlegada=findViewById(R.id.CiudadLlegada);
         bConfirmar=findViewById(R.id.bConfirmar);
+        HoraIda=findViewById(R.id.HoraIda);
+        FechaIda=findViewById(R.id.FechaIda);
         spinner1.setOnItemSelectedListener(this);
         spinner2.setOnItemSelectedListener(this);
         spinner3.setOnItemSelectedListener(this);
@@ -106,6 +109,31 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         String ENombreT = String.valueOf(tNombre.getText());
         String EDireccionT = String.valueOf(tDirec.getText());
         validado=true;
+        if (!(matHora.matches())){
+            HoraIda.setText("ERROR");
+            HoraVuelta.setText("ERROR");
+            validado=false;
+        } else {
+            HoraIda.setText("Hora de ida");
+            HoraVuelta.setText("Hora de vuelta");
+            validado=true;
+        }
+        if (!(matFecha.matches())){
+            FechaIda.setText("ERROR");
+            FechaVuelta.setText("ERROR");
+            validado=false;
+        } else {
+            FechaIda.setText("Fecha de ida");
+            FechaVuelta.setText("Fecha de vuelta");
+            validado=true;
+        }
+        if (!(fechaV.compareTo(fecha)>0)) {
+            validado=false;
+            FechaVuelta.setText("Esta fecha no puede ser anterior a la de ida");
+        } else {
+            validado=true;
+            FechaVuelta.setText("Fecha de Vuelta");
+        }
     }
     public void comprobarViaje( String tSpinner3){
         if(!(tSpinner3.equalsIgnoreCase("Ida"))){

@@ -23,14 +23,14 @@ public class Datos extends AppCompatActivity {
         eNombre=findViewById(R.id.eNombre);
         ePhone=findViewById(R.id.ePhone);
         bImage=findViewById(R.id.bImage);
-        bImage.setOnClickListener(
+        /*bImage.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 
                     }
                 }
-        );
+        );*/
     }
     public static Datos generateUser(){
         Datos d = new Datos();

@@ -6,10 +6,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    static String preMensaje=".";
     RecyclerView lista;
     Button b1;
     DatosAdapter adapter;
@@ -28,16 +30,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 adapter.add(Datos.generateUsers(Datos.usuarios_iniciales));
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        crearUsuario();
-                    }
-                };
+                crearUsuario();
             }
         });
     }
     public void crearUsuario(){
+        Log.d("LOG", "LLamada");
         Intent intento = new Intent(this,Datos.class);
+        String mensaje= "inserte el ususario: ";
+        intento.putExtra(preMensaje,"Hola "+mensaje+"!!!!!!");
+        startActivity(intento);
     }
 }

@@ -48,7 +48,7 @@
         android:id="@+id/bAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="41dp"
         android:layout_marginTop="40dp"
         android:hint="Añadir"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,24 +69,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="100dp"
         android:hint="Recargar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vVista" />
-
-    <TextView
-        android:id="@+id/vVista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="100dp"
-        android:text="SQLite"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bEliminar" />
+        app:layout_constraintTop_toBottomOf="@+id/rListaUsusarios" />
 
     <EditText
         android:id="@+id/tNuevoNombre"
@@ -101,4 +89,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tPhone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rListaUsusarios"
+        android:layout_width="409dp"
+        android:layout_height="268dp"
+        app:layout_constraintTop_toBottomOf="@+id/bEliminar"
+        tools:layout_editor_absoluteX="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

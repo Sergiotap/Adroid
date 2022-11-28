@@ -25,7 +25,6 @@ userAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent intento2 = getIntent();
         setContentView(R.layout.activity_main);
         userlist=new ArrayList<>();
         getSupportActionBar().hide();
@@ -49,8 +48,8 @@ userAdapter adapter;
         modificar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "funciono",Toast.LENGTH_SHORT).show();
-                //lanzar();
+                //Toast.makeText(getApplicationContext(), "funciono",Toast.LENGTH_SHORT).show();
+                lanzar();
             }
         });
 

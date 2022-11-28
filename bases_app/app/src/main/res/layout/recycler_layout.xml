@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="240dp"
+    android:background="@android:color/background_dark"
     app:layoutDescription="@xml/recycler_layout_scene">
 
     <LinearLayout
@@ -13,11 +14,13 @@
         <LinearLayout
             android:layout_width="115dp"
             android:layout_height="match_parent"
+            android:background="@android:color/background_dark"
             android:orientation="horizontal"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@android:color/background_dark"
             android:orientation="vertical">
 
             <LinearLayout
@@ -30,8 +33,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="98dp"
                     android:layout_weight="1"
+                    android:background="#2E026C"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -44,8 +49,10 @@
                     android:layout_width="238dp"
                     android:layout_height="98dp"
                     android:layout_weight="1"
+                    android:background="#0A5960"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

@@ -15,7 +15,6 @@ public interface userDAO {
     user findByName(String nombre);
     @Insert
     void insertAll(user... users);
-
     @Delete
     void delete(user user);
 }

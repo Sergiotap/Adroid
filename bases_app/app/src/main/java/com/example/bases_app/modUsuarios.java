@@ -25,6 +25,7 @@ public class modUsuarios extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mod_usuarios);
+        //getSupportActionBar().hide();
         add=findViewById(R.id.bAdd);
         editar=findViewById(R.id.bEditar);
         delete=findViewById(R.id.bEliminar);
@@ -79,6 +80,7 @@ public class modUsuarios extends AppCompatActivity {
         });
     }
     public void lanzar(){
+        finish();
         Intent intento2 = new Intent(this,MainActivity.class);
         startActivity(intento2);
     }

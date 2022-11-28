@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id bAdd
+id bEditar
+id bEliminar
+id bModificaciones
+id bMostrar
+id bVisualizar
+id end
+id rListaUsusarios
+id start
+id tNombre
+id tNuevoNombre
+id tPhone
+id textView
+id vNombre
+id vTelefono
+layout activity_main
+layout mod_usuarios
+layout recycler_layout
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.Bases_app
+xml backup_rules
+xml data_extraction_rules
+xml recycler_layout_scene

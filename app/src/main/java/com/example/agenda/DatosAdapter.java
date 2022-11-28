@@ -21,8 +21,8 @@ public class DatosAdapter extends RecyclerView.Adapter<DatosAdapter.ViewHolder> 
             super(view);
             // Define click listener for the ViewHolder's View
 
-            nombre = (TextView) view.findViewById(R.id.eNombre);
-            telefono = (TextView) view.findViewById(R.id.ePhone);
+            nombre = (TextView) view.findViewById(R.id.nombre);
+            telefono = (TextView) view.findViewById(R.id.phone);
         }
         public TextView getTextNombre() {
             return nombre;
@@ -40,7 +40,7 @@ public class DatosAdapter extends RecyclerView.Adapter<DatosAdapter.ViewHolder> 
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         // Create a new view, which defines the UI of the list item
         View view = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.activity_datos, viewGroup, false);
+                .inflate(R.layout.row_usuario, viewGroup, false);
 
         return new ViewHolder(view);
     }

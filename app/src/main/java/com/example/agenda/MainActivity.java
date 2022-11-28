@@ -24,13 +24,14 @@ public class MainActivity extends AppCompatActivity {
         b1=findViewById(R.id.b1);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this.getApplicationContext());
         lista.setLayoutManager(layoutManager);
-        adapter = new DatosAdapter(Datos.generateUsers(Datos.usuarios_iniciales));
+        adapter = new DatosAdapter(Datos.generateUsers());
         lista.setAdapter(adapter);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                adapter.add(Datos.generateUsers(Datos.usuarios_iniciales));
-                crearUsuario();
+                //adapter.add(Datos.generateUsers(Datos.usuarios_iniciales));
+
+                //crearUsuario();
             }
         });
     }

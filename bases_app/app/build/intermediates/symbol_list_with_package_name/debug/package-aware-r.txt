@@ -2728,10 +2728,12 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id bAdd
 id bEditar
+id bEditar2
 id bEliminar
-id bModificaciones
-id bMostrar
+id bEliminar2
+id bModificar
 id bVisualizar
+id bVolver
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3054,8 +3056,10 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tNombre
+id tNombreNuevo
 id tNuevoNombre
 id tPhone
+id tTelefono
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3251,6 +3255,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_main2
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

@@ -16,5 +16,16 @@ public class user {
     public user(){
         uid=UUID.randomUUID().toString();
     }
+    public user (String nombre,String telefono) {
+        this.nombre=nombre;
+        this.telefono=telefono;
+    };
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
 }

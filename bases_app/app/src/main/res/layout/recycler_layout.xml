@@ -44,14 +44,14 @@
                 android:layout_height="100dp"
                 android:orientation="horizontal">
 
-                <Button
+                <TextView
                     android:id="@+id/vTelefono"
                     android:layout_width="238dp"
                     android:layout_height="98dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#0A5960"
+                    android:background="#0A5960"
                     android:gravity="center"
-                    android:text="Button"
+                    android:text="TextView"
                     android:textColor="@android:color/white" />
 
             </LinearLayout>

@@ -6,117 +6,120 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml
+8-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml
+9-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CALL_PHONE" />
-11-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:5:5-69
-11-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:5:22-66
-12
-13    <application
-13-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:7:5-44:19
-14        android:allowBackup="true"
-14-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:8:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.8.0] C:\Users\Sergi\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-16        android:dataExtractionRules="@xml/data_extraction_rules"
-16-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:9:9-65
-17        android:debuggable="true"
-18        android:fullBackupContent="@xml/backup_rules"
-18-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:10:9-54
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:11:9-43
-20        android:label="@string/app_name"
-20-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:12:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:13:9-54
-22        android:supportsRtl="true"
-22-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:14:9-35
-23        android:testOnly="true"
-24        android:theme="@style/Theme.Design.NoActionBar" >
-24-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:15:9-56
-25        <activity
-25-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:17:9-24:20
-26            android:name="com.example.bases_app.MainActivity2"
-26-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:18:13-42
-27            android:exported="false" >
-27-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:19:13-37
-28            <meta-data
-28-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:20:13-22:36
-29                android:name="android.app.lib_name"
-29-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:21:17-52
-30                android:value="" />
-30-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:22:17-33
-31        </activity>
-32        <activity
-32-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:25:9-31:20
-33            android:name="com.example.bases_app.modUsuarios"
-33-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:26:13-40
-34            android:exported="false" >
-34-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:27:13-37
-35            <meta-data
-35-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:20:13-22:36
-36                android:name="android.app.lib_name"
-36-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:21:17-52
-37                android:value="" />
-37-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:22:17-33
-38        </activity>
-39        <activity
-39-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:32:9-43:20
-40            android:name="com.example.bases_app.MainActivity"
-40-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:33:13-41
-41            android:exported="true" >
-41-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:34:13-36
-42            <intent-filter>
-42-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:35:13-39:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:36:17-69
-43-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:36:25-66
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:38:17-77
-45-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:38:27-74
-46            </intent-filter>
-47
-48            <meta-data
-48-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:20:13-22:36
-49                android:name="android.app.lib_name"
-49-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:21:17-52
-50                android:value="" />
-50-->C:\Users\Sergi\OneDrive\Documentos\dam\Adroid\bases_app\app\src\main\AndroidManifest.xml:22:17-33
-51        </activity>
-52
-53        <service
-53-->[androidx.room:room-runtime:2.4.3] C:\Users\Sergi\.gradle\caches\transforms-3\4c4bbe8def8631c1151c061ee75b6868\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
-54            android:name="androidx.room.MultiInstanceInvalidationService"
-54-->[androidx.room:room-runtime:2.4.3] C:\Users\Sergi\.gradle\caches\transforms-3\4c4bbe8def8631c1151c061ee75b6868\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
-55            android:directBootAware="true"
-55-->[androidx.room:room-runtime:2.4.3] C:\Users\Sergi\.gradle\caches\transforms-3\4c4bbe8def8631c1151c061ee75b6868\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
-56            android:exported="false" />
-56-->[androidx.room:room-runtime:2.4.3] C:\Users\Sergi\.gradle\caches\transforms-3\4c4bbe8def8631c1151c061ee75b6868\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
-57
-58        <provider
-58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sergi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-59            android:name="androidx.startup.InitializationProvider"
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sergi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-60            android:authorities="com.example.bases_app.androidx-startup"
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sergi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-61            android:exported="false" >
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sergi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-62            <meta-data
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sergi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sergi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-64                android:value="androidx.startup" />
-64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sergi\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-65            <meta-data
-65-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sergi\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sergi\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-67                android:value="androidx.startup" />
-67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sergi\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-68        </provider>
-69    </application>
-70
-71</manifest>
+11-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:5:5-69
+11-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:5:22-66
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:6:5-80
+12-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:6:22-77
+13
+14    <application
+14-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:7:5-44:19
+15        android:allowBackup="true"
+15-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:8:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] /home/sergiotap/.gradle/caches/transforms-3/87a796fe63836d99a2198ac6a6284cb3/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+17        android:dataExtractionRules="@xml/data_extraction_rules"
+17-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:9:9-65
+18        android:debuggable="true"
+19        android:fullBackupContent="@xml/backup_rules"
+19-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:10:9-54
+20        android:icon="@mipmap/ic_launcher"
+20-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:11:9-43
+21        android:label="@string/app_name"
+21-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:12:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:13:9-54
+23        android:supportsRtl="true"
+23-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:14:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.Design.NoActionBar" >
+25-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:15:9-56
+26        <activity
+26-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:17:9-24:20
+27            android:name="com.example.bases_app.MainActivity2"
+27-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:18:13-42
+28            android:exported="false" >
+28-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:19:13-37
+29            <meta-data
+29-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:20:13-22:36
+30                android:name="android.app.lib_name"
+30-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:21:17-52
+31                android:value="" />
+31-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:22:17-33
+32        </activity>
+33        <activity
+33-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:25:9-31:20
+34            android:name="com.example.bases_app.modUsuarios"
+34-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:26:13-40
+35            android:exported="false" >
+35-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:27:13-37
+36            <meta-data
+36-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:20:13-22:36
+37                android:name="android.app.lib_name"
+37-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:21:17-52
+38                android:value="" />
+38-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:22:17-33
+39        </activity>
+40        <activity
+40-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:32:9-43:20
+41            android:name="com.example.bases_app.MainActivity"
+41-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:33:13-41
+42            android:exported="true" >
+42-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:34:13-36
+43            <intent-filter>
+43-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:35:13-39:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:36:17-69
+44-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:36:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:38:17-77
+46-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:38:27-74
+47            </intent-filter>
+48
+49            <meta-data
+49-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:20:13-22:36
+50                android:name="android.app.lib_name"
+50-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:21:17-52
+51                android:value="" />
+51-->/home/sergiotap/AndroidStudioProjects/bases_app/app/src/main/AndroidManifest.xml:22:17-33
+52        </activity>
+53
+54        <service
+54-->[androidx.room:room-runtime:2.4.3] /home/sergiotap/.gradle/caches/transforms-3/4c4bbe8def8631c1151c061ee75b6868/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
+55            android:name="androidx.room.MultiInstanceInvalidationService"
+55-->[androidx.room:room-runtime:2.4.3] /home/sergiotap/.gradle/caches/transforms-3/4c4bbe8def8631c1151c061ee75b6868/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74
+56            android:directBootAware="true"
+56-->[androidx.room:room-runtime:2.4.3] /home/sergiotap/.gradle/caches/transforms-3/4c4bbe8def8631c1151c061ee75b6868/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
+57            android:exported="false" />
+57-->[androidx.room:room-runtime:2.4.3] /home/sergiotap/.gradle/caches/transforms-3/4c4bbe8def8631c1151c061ee75b6868/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] /home/sergiotap/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] /home/sergiotap/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+61            android:authorities="com.example.bases_app.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] /home/sergiotap/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] /home/sergiotap/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] /home/sergiotap/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] /home/sergiotap/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] /home/sergiotap/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sergiotap/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sergiotap/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/sergiotap/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+69        </provider>
+70    </application>
+71
+72</manifest>

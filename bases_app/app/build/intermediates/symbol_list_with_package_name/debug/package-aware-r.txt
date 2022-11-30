@@ -2728,9 +2728,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id bAdd
 id bEditar
-id bEditar2
 id bEliminar
-id bEliminar2
 id bModificar
 id bVisualizar
 id bVolver
@@ -2865,6 +2863,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imagen
 id immediateStop
 id included
 id indeterminate
@@ -3056,7 +3055,6 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tNombre
-id tNombreNuevo
 id tNuevoNombre
 id tPhone
 id tTelefono

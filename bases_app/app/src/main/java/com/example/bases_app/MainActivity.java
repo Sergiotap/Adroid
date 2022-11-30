@@ -14,14 +14,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Serializable {
     Button modificar;
     appDataBase db;
     userDAO usuarioDao;
-    private List<user> userlist;
+    static List<user> userlist;
     RecyclerView recyclerUsuarios;
     userAdapter adapter;
     private userAdapter.RecyclerViewClickListener listener;
@@ -89,14 +90,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v, int position) {
 
                 //Crea un Intent que accede a la actividad que muestra el objeto
+                finish();
                 Intent intent= new Intent(getApplicationContext(),MainActivity2.class);
                 intent.putExtra("nombre",userlist.get(position).getNombre());
-                intent.putExtra("descripcion",userlist.get(position).getTelefono());
+                intent.putExtra("telefono",userlist.get(position).getTelefono());
 
                 resultadoLauncher.launch(intent);
             }
         };}
     public void lanzar(){
+        finish();
         Intent intento1 = new Intent(this,modUsuarios.class);
         resultadoLauncher.launch(intento1);
     }

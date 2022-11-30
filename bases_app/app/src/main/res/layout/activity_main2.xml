@@ -25,23 +25,7 @@
                 android:backgroundTint="#7550FA"
                 android:text="Volver" />
 
-            <Button
-                android:id="@+id/bEliminar2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#7550FA"
-                android:gravity="center"
-                android:text="Eliminar" />
 
-            <Button
-                android:id="@+id/bEditar2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#7550FA"
-                android:gravity="center"
-                android:text="Editar" />
 
         </LinearLayout>
 
@@ -87,24 +71,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/tNombreNuevo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#450629"
-                    android:ems="10"
-                    android:gravity="center"
-                    android:hint="Nombre"
-                    android:visibility="invisible"
-                    android:inputType="textPersonName" />
-            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

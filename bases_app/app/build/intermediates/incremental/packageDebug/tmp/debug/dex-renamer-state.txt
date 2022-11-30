@@ -1,9 +1,9 @@
-#Tue Nov 29 11:52:51 CET 2022
-base.2=C\:\\Users\\Sergi\\OneDrive\\Documentos\\dam\\Adroid\\bases_app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+#Wed Nov 30 16:44:56 CET 2022
+base.2=/home/sergiotap/AndroidStudioProjects/bases_app/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
 path.2=12/classes.dex
-base.1=C\:\\Users\\Sergi\\OneDrive\\Documentos\\dam\\Adroid\\bases_app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=/home/sergiotap/AndroidStudioProjects/bases_app/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 path.1=0/classes.dex
-base.0=C\:\\Users\\Sergi\\OneDrive\\Documentos\\dam\\Adroid\\bases_app\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.0=/home/sergiotap/AndroidStudioProjects/bases_app/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

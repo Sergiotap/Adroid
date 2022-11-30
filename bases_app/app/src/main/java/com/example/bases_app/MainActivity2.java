@@ -3,6 +3,7 @@ package com.example.bases_app;
 
 import static com.example.bases_app.userAdapter.requestPermissionLauncher;
 
+import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -16,30 +17,41 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.List;
 
 public class MainActivity2 extends AppCompatActivity{
-    Button bVolver, bEditar, bEliminar;
+    Button bVolver/*, bEditar, bEliminar*/;
     appDataBase db;
     userDAO usuarioDao;
     TextView tNombre, tTelefono;
-    EditText tNuevoNombre;
+    //EditText tNuevoNombre;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         bVolver=findViewById(R.id.bVolver);
-        bEditar=findViewById(R.id.bEditar2);
-        bEliminar=findViewById(R.id.bEliminar2);
+        //bEditar=findViewById(R.id.bEditar2);
+        //bEliminar=findViewById(R.id.bEliminar2);
         tNombre=findViewById(R.id.vNombre);
         tTelefono=findViewById(R.id.tTelefono);
-        tNuevoNombre=findViewById(R.id.tNombreNuevo);
+        //tNuevoNombre=findViewById(R.id.tNombreNuevo);
         db = Room.databaseBuilder(getApplicationContext(),
                 appDataBase.class, "usuarios").allowMainThreadQueries().build();
         usuarioDao = db.usuarioDao();
+        Intent intento = getIntent();
+        tNombre.setText(intento.getStringExtra("nombre"));
+        tTelefono.setText(intento.getStringExtra("telefono"));
+
+
+
+
+
         requestPermissionLauncher = registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
             if (isGranted) {
                 // Permission is granted. Continue the action or workflow in your
@@ -54,7 +66,7 @@ public class MainActivity2 extends AppCompatActivity{
                 Toast.makeText(this, "Necesitamos permiso para llamar", Toast.LENGTH_SHORT).show();
             }
         });
-        bEliminar.setOnClickListener(new View.OnClickListener() {
+        /*bEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View V) {
                 List<user> usuarios = usuarioDao.getAll();
@@ -64,8 +76,8 @@ public class MainActivity2 extends AppCompatActivity{
                     }
                 }
             }
-        });
-        bEditar.setOnClickListener(new View.OnClickListener() {
+        });*/
+        /*bEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(tNuevoNombre.getVisibility()==View.INVISIBLE){
@@ -81,10 +93,13 @@ public class MainActivity2 extends AppCompatActivity{
                             aNuevo.telefono = tTelefono.getText().toString();
                             usuarioDao.insertAll(aNuevo);
                         }
+                        else {
+                            Toast.makeText(getApplicationContext(), "No se ha encontrado el usuario", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 }
             }
-        });
+        });*/
         bVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,7 +114,7 @@ public class MainActivity2 extends AppCompatActivity{
     private void llamar(){
         Intent phoneIntent = new Intent(Intent.ACTION_CALL);
         //sin el tel: no entiende que es un numero de telefono
-        phoneIntent.setData(Uri.parse("tel:+3425"));//bTelefono.getText().toString()));
+        phoneIntent.setData(Uri.parse("tel:+34"+tTelefono.getText().toString()));
         startActivity(phoneIntent);
     }
 

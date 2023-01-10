@@ -25,6 +25,7 @@ public class AleatorioUID extends AppCompatActivity {
             label.setText(String.valueOf(dato));
         });
         btn.setOnClickListener((v)->{
+            label.setText("Cargando . . .");
             vm.nuevoAleatorio();
         });
     }

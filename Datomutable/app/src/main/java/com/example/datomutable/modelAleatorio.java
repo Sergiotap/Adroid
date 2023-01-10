@@ -17,5 +17,6 @@ public class modelAleatorio {
 
     private void esperarAleatorio() throws InterruptedException {
         Thread.sleep((long) (Math.random()*MAX_TIME));
+
     }
 }
